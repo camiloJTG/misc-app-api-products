@@ -1,0 +1,47 @@
+# Git version
+.git
+.gitignore
+.gitlab-ci.yml
+.svn
+.hg
+
+# IDE configurations
+.vscode/
+.idea/
+.project
+.settings/
+.classpath
+.cache
+Thumbs.db
+
+# Dependencies directory
+node_modules/
+dist/
+build/
+target/
+.next/
+
+# .env configuration
+.env
+.env.local
+.env.*.local
+
+# Output files
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+*.log
+
+# Temporal system files
+.DS_Store
+Thumbs.db
+.AppleDouble
+.LSOverride
+
+# Testing files
+coverage/
+*.lcov
+
+# node files
+node_modules/
+postgres/

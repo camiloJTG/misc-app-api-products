@@ -21,6 +21,6 @@ services:
       - 3001:3001
     env_file:
       - .env
-    container_name: misc-app-service
+    container_name: misc-app-services
     depends_on:
       - db
