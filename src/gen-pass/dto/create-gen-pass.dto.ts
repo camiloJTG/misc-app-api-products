@@ -1,4 +1,4 @@
-import { IsBoolean, IsNotEmpty, IsNumber, IsOptional } from 'class-validator';
+import { IsBoolean, IsInt, IsOptional, Max, Min } from 'class-validator';
 
 export class CreateGenPassDto {
   @IsBoolean()
@@ -17,7 +17,8 @@ export class CreateGenPassDto {
   @IsOptional()
   includeSpecialCharacters: boolean;
 
-  @IsNumber()
-  @IsNotEmpty()
+  @IsInt()
+  @Min(1)
+  @Max(200)
   length: number;
 }
