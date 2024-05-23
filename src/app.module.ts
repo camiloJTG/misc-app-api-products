@@ -3,6 +3,8 @@ import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ShortenerModule } from './shortener/shortener.module';
 import { CommonModule } from './common/common.module';
+import { GenPassModule } from './gen-pass/gen-pass.module';
+import { AuthModule } from './auth/auth.module';
 
 @Module({
   imports: [
@@ -20,6 +22,8 @@ import { CommonModule } from './common/common.module';
     }),
     ShortenerModule,
     CommonModule,
+    GenPassModule,
+    AuthModule,
   ],
 })
 export class AppModule {}
