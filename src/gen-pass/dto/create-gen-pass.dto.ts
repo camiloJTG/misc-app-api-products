@@ -20,5 +20,5 @@ export class CreateGenPassDto {
   @IsInt()
   @Min(1)
   @Max(200)
-  length: number;
+  passwordLength: number;
 }

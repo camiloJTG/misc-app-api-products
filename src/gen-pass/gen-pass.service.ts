@@ -29,7 +29,7 @@ export class GenPassService {
       includeNumbers,
       includeSpecialCharacters,
       includeUppercase,
-      length,
+      passwordLength,
     } = params;
     let characters = '';
     let credential = '';
@@ -44,7 +44,7 @@ export class GenPassService {
         'At least one character type must be selected',
       );
 
-    for (let i = 0; i < length; i++) {
+    for (let i = 0; i < passwordLength; i++) {
       const randomIndex = Math.floor(Math.random() * characters.length);
       credential += characters[randomIndex];
     }
